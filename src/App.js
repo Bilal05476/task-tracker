@@ -109,7 +109,7 @@ const App = () => {
           onDelete={deleteTask}
         />
       ) : (
-        <div style={{ marginTop: "20px" }}>Loading ..</div>
+        <div style={{ marginTop: "20px" }}>Loading ...</div>
       )}
     </div>
   );
