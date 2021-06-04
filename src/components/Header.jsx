@@ -3,7 +3,7 @@ const Header = ({ setToggleBtn, toggleBtn }) => {
     <div className="header">
       <h1>Task tracker</h1>
       <button
-        style={{ background: toggleBtn ? "red" : "green", border: "none" }}
+        style={{ background: toggleBtn ? "crimson" : "green", border: "none" }}
         onClick={() => setToggleBtn(!toggleBtn)}
       >
         {toggleBtn ? "Close" : "Add"}
