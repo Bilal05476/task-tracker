@@ -1,13 +1,73 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  margin: 40px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 2px solid #000;
+}
+.task {
+  margin: 20px auto;
+  background-color: #ccc;
+  border-radius: 5px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.task.remainder {
+  border-left: 5px solid green;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header button {
+  background-color: green;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+form {
+  margin: 10px auto;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.form-control {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.form-control input {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+  outline: none;
+  border-radius: 5px;
+}
+.form-control.remainder {
+  align-items: center;
+  flex-direction: row;
+}
+.remainder input {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+.btn {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+  padding: 7px;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
 }
