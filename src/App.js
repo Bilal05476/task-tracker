@@ -11,19 +11,19 @@ const App = () => {
       id: 0,
       name: "Javascript learn",
       date: "23 june at 15:00",
-      remainder: true,
+      reminder: true,
     },
     {
       id: 1,
       name: "ReactJs learn",
       date: "25 june at 14:45",
-      remainder: false,
+      reminder: false,
     },
     {
       id: 2,
       name: "Python learn",
       date: "15 june at 12:55",
-      remainder: true,
+      reminder: true,
     },
   ]);
 

@@ -11,14 +11,16 @@ const AddTask = ({ onAdd }) => {
     if (!name) {
       setError("Please add task name");
       return;
-    }
-    if (!date) {
+    } else if (!date) {
       setError("Please add task date");
       return;
+    } else {
+      onAdd({ name, date, reminder });
+      setError("");
     }
-    onAdd({ name, date, reminder });
-    setDate("");
+
     setName("");
+    setDate("");
     setReminder(false);
   };
   return (
@@ -45,6 +47,7 @@ const AddTask = ({ onAdd }) => {
         <div className="form-control remainder">
           <label>Set Reminder</label>
           <input
+            value={reminder}
             onChange={(e) => setReminder(e.currentTarget.checked)}
             checked={reminder}
             type="checkbox"

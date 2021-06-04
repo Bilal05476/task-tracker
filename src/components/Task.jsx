@@ -4,7 +4,7 @@ const Task = ({ task, onDelete, onDdbClick }) => {
   return (
     <div
       onDoubleClick={() => onDdbClick(task.id)}
-      className={`task ${task.remainder ? "remainder" : ""}`}
+      className={`task ${task.reminder ? "remainder" : ""}`}
     >
       <div>
         <h4>{task.name}</h4>
