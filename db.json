@@ -1,22 +1,3 @@
 {
-  "tasks": [
-    {
-      "id": 0,
-      "name": "Javascript learn",
-      "date": "23 june at 15:00",
-      "reminder": false
-    },
-    {
-      "name": "Python Learn",
-      "date": "30 Jun at Sat",
-      "reminder": true,
-      "id": 2
-    },
-    {
-      "name": "Hello World",
-      "date": "21 Jun at 12:00",
-      "reminder": false,
-      "id": 3
-    }
-  ]
+  "tasks": []
 }

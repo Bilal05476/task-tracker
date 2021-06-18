@@ -1,4 +1,6 @@
+
 const Header = ({ setToggleBtn, toggleBtn }) => {
+
   return (
     <div className="header">
       <h1>Task tracker</h1>
